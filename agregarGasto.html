@@ -2,9 +2,66 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<script src=jquery.js></script>
 	<title>Agregar Gasto</title>
+	<link rel="stylesheet" href="css/agregarGasto.css">
 </head>
-<body style="background-color:red">
+<body>
+
+<div id="titulo">Agregar Gasto</div>
+
+
+<select id="select">
+	<option value="0">Seleccionar Categoría:</option>
+	<option value="comida">Comida</option>
+	<option value="transporte">Transporte</option>
+	<option value="ropa">Ropa</option>
+	<option value="impuestos">Impuestos</option>
+	<option value="gastosvarios">Gastos Varios</option>
+
+</select>
+
+<div id="descripcion">
+	<p>Descripción:</p>
+	<textarea name="" id="" cols="190" rows="5"></textarea>
+</div>
+
+<div id="botones">
+
+	<div id="confirmar"><button id="buttonConfirmar">Confirmar</button></div>
+
+	<div id="confirmar"><button id="buttonCancelar">Cancelar</button></div>
+	
+	
+</div>
+
+<script>
+
+
+	$(document).ready(function() {
+
+		$("#buttonConfirmar").on('click',confirmar);
+		$("#buttonCancelar").on('click',cancelar);
+
+	});
+
+	function confirmar(){
+		var url = "index.html";    
+		$(location).attr('href',url);
+	}
+
+	function cancelar(){
+		var url = "index.html";    
+		$(location).attr('href',url);
+	}
+
+
+
+
+
+
+
+</script>
 
 
 	
