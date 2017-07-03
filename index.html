@@ -44,13 +44,58 @@
 
 	$(document).ready(function() {
 
-		
-
-
-
+		$('#agregarGasto').on('click',agregarGasto);
+		$('#agregarIngreso').on('click',agregarIngreso);
+		$('#resumenDiario').on('click',resumenDiario);
+		$('#resumenMensual').on('click',resumenMensual);
+		$('#graficoDeGastos').on('click',graficoGastos);
+		$('#graficoDeIngresos').on('click',graficoIngresos);
 
 
 	});
+
+	function agregarGasto(){
+
+		var url = "agregarGasto.html";    
+		$(location).attr('href',url);
+
+	}
+
+	function agregarIngeso()
+	{
+		var url = "agregarIngreso.html";    
+		$(location).attr('href',url);
+	}
+
+	function resumenDiario()
+	{
+		var url = "resumenDiario.html";    
+		$(location).attr('href',url);
+
+	}
+
+	function resumenMensual()
+	{
+		var url = "resumenMensual.html";    
+		$(location).attr('href',url);
+
+	}
+
+	function graficoGastos()
+	{
+		var url = "graficoDeGastos.html";    
+		$(location).attr('href',url);
+
+	}
+
+	function graficoIngresos()
+	{
+		var url = "graficoDeIngresos.html";    
+		$(location).attr('href',url);
+
+	}
+
+
 
 
 
